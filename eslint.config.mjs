@@ -1,0 +1,26 @@
+import { FlatCompat } from '@eslint/eslintrc';
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const compat = new FlatCompat({
+  baseDirectory: __dirname,
+});
+
+const eslintConfig = [
+  ...compat.extends('next/core-web-vitals', 'next/typescript'),
+  {
+    files: ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'], // TypeScript 파일에만 적용
+    plugins: {
+      '@typescript-eslint': require('@typescript-eslint/eslint-plugin'),
+    },
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'off', // "any" 타입 사용 금지 규칙 비활성화
+      '@typescript-eslint/no-unused-vars': 'off', // 사용되지 않은 변수 금지 규칙 비활성화
+    },
+  },
+];
+
+export default eslintConfig;

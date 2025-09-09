@@ -1,0 +1,9 @@
+.term_container {font-size:16px; word-break:keep-all; line-height:2; font-weight:300;}
+.term_h1 {text-align:center; font-weight:bold; font-size:2em; line-height:1.2;}
+.term_box {padding:2em; background:#f1f1f1; margin:3em auto;}
+.term_h2 {font-weight:bold; font-size:1.4em; margin-top:2em; margin-bottom:0.3em;}
+.term_h6 {font-weight:bold; font-size:1.2em; margin-top:2em; line-height:1.2;}
+.term_ul_num {list-style-type:decimal;line-height:2; padding-left:18px; font-weight:300; word-break:keep-all;}
+.term_ul_num2 {list-style-type:disc;line-height:2; padding-left:18px;  font-weight:300; word-break:keep-all;}
+.term_ul_num li, .term_ul_num2 li {word-break:keep-all !important;}
+.term_indent {padding:1em 0 1em 2em}

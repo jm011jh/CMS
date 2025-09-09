@@ -1,0 +1,66 @@
+.root {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: var(--black, #000);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 0px;
+}
+
+.closeBtn {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    cursor: pointer;
+}
+
+.content {
+    color: var(--font_gray, #7D828C);
+    text-align: center;
+
+    /* Text md/Medium */
+    
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+
+    margin-bottom: 24px;
+}
+
+.buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.cancelButton {
+    display: flex;
+    height: 56px;
+    padding: 0px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex: 1 0 0;
+    border-radius: 12px;
+    border: 1px solid var(--Primary-Primary, #ADAAC7);
+}
+
+.okButton {
+    display: flex;
+    height: 56px;
+    padding: 0px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex: 1 0 0;
+    border-radius: 12px;
+    background: var(--Primary-Primary, #ADAAC7);
+}

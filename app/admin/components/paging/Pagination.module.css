@@ -1,0 +1,140 @@
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  color: #6B7280;
+  /* font-family: 'Pretendard'; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.wrapper ul {
+  list-style: none;
+  gap: 16px;
+  display: flex;
+}
+
+.wrapper li {
+  float: left;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper a {
+  height: 25px;
+  line-height: 25px;
+}
+
+.page {
+  margin: 0px;
+  cursor: pointer;
+  border-radius: 30px;
+  border: solid 1px rgba(0, 0, 0, 0);
+  color: #6B7280;
+  text-align: center;
+
+  /* width: 24px; */
+  min-width: 24px;
+  width: fit-content;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 2px;
+}
+
+.page:hover {
+  border: solid 1px black;
+}
+
+/* .icon,
+.move:last-child::after,
+.move:first-child::before {
+    position: absolute;
+    font-size: 20px;
+    padding: 0 7px 0px;
+} */
+
+.move {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+}
+
+.moveLink {
+  /* width: 50px; */
+  display: block;
+  z-index: 10;
+}
+
+.move a:hover {
+  text-decoration: underline;
+}
+
+.move:first-child {
+  text-align: right;
+}
+
+.move:first-child::before {
+  left: 0;
+}
+
+.move:last-child::after {
+  right: 0;
+}
+
+.invisible {
+  /* visibility: hidden; */
+  opacity: 0.5;
+  cursor: default !important;
+}
+
+.active {
+  background: #adaac7;
+  color: var(--Neutral-Grey-White, #fff);
+}
+
+.arrow {
+  width: 24px;
+  height: 24px;
+}
+
+@media all and (max-width: 1024px) {
+  .arrow,
+  .page {
+    min-width: 28px;
+    height: 28px;
+  }
+  .move {
+    margin: 0;
+  }
+}
+@media all and (max-width: 769px) {
+  .arrow,
+  .page {
+    min-width: 24px;
+    height: 24px;
+  }
+  .move {
+    margin: 0;
+  }
+}
+@media all and (max-width: 480px) {
+  .arrow,
+  .page {
+    min-width: 22px;
+    height: 22px;
+  }
+  .move {
+    margin: 0;
+  }
+}
